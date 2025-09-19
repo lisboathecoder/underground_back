@@ -41,7 +41,7 @@ const createArtista = (req, res) => {
     estado: estado,
   };
   artistas.push(novoArtista);
-  res.status(200).json({
+  res.status(201).json({
     success: true,
     message: `Artista novo no bloco!`,
     artista: novoArtista,
